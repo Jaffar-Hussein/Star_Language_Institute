@@ -1,7 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
+@import url('https://fonts.googleapis.com/css2?family=Aboreto&display=swap');
 .background-orange {
     left: 4.135vh;
     top: 7.89vw;
@@ -33,13 +33,13 @@
 }
 
 .boy2 {
-    right: 30vw;
-    bottom: 1vh;
+    right: 45vw;
+    bottom: 8vh;
 }
 
 .students {
     right: 10vw;
-    bottom: 15vh;
+    bottom: 40vh;
 }
 
 .first {
@@ -49,4 +49,10 @@
 .section{
     height:80vh;
 }
+}
+#quote {
+    font-family: 'Aboreto', cursive;
+}
+.title{
+    font-family: 'Aboreto'
 }
