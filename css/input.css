@@ -1,3 +1,52 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.background-orange {
+    left: 4.135vh;
+    top: 7.89vw;
+    width: 36vw;
+    height: 32vh;
+    filter: blur(170px);
+    /* left: -137px;
+    
+    top: -105px; */
+}
+
+.boy {
+    left: 10vw;
+    top: 40vh;
+}
+
+.shape {
+    left: 13.7%;
+    right: 71.6%;
+    top: 9.7%;
+    /* transform: rotate(64.43deg); */
+    bottom: 80.33%;
+}
+
+.section {
+    height: 60vh;
+    align-self: center;
+    /* width: 100vw; */
+}
+
+.boy2 {
+    right: 30vw;
+    bottom: 1vh;
+}
+
+.students {
+    right: 10vw;
+    bottom: 15vh;
+}
+
+.first {
+    width: 100vw;
+}
+@media (max-width: 980px){
+.section{
+    height:80vh;
+}
+}
