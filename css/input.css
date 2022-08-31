@@ -42,14 +42,14 @@
     bottom: 40vh;
 }
 
-.first {
+/* .first {
     width: 100vw;
-}
-@media (max-width: 980px){
+} */
+/* @media (max-width: 980px){
 .section{
     height:80vh;
-}
-}
+} */
+/* } */
 #quote {
     font-family: 'Aboreto', cursive;
 }

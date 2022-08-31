@@ -12,7 +12,7 @@
 
 <body>
     <!-- First screen -->
-    <div class="relative h-screen p-1 first">
+    <div class="relative min-h-fit p-1 first mb-5">
         <!-- Nav -->
         <nav class="  mx-auto px-6 py-1 mb-5">
             <div class=" mx-auto flex items-center justify-between">
@@ -32,22 +32,24 @@
             </div>
         </nav>
         <!-- HERO SECTION -->
-        <section class="section w-screen flex flex-col place-content-center items-center">
-            <p class="break-normal text-center font-bold text-2xl align-top mb-6 tracking-wider not-italic title md:text-3xl">Star
+        <section class="section relative  w-screen  max-h-fit  flex flex-col place-content-center items-center ">
+            <p
+                class="break-normal text-center font-bold text-2xl align-top mb-6 tracking-wider not-italic title md:text-3xl">
+                Star
                 Language Institute</p>
             <p id="quote"
-                class="break-normal font-extralight text-1xl font-sans w-1/2 leading-loose text-center text-1xl align-baseline mb-6 tracking-wide whitespace-normal md:text-3xl">
+                class="z-3 break-normal font-extralight text-1xl antialiased font-sans w-1/2 leading-loose text-center text-1xl  align-baseline mb-6 tracking-wide whitespace-normal md:text-3xl">
                 Lorem ipsum, dolor sit amet consectetur adipisicing elit.
                 Voluptatem rem perspiciatis et libero animi necessitatibus? Omnis!</p>
-            <span id="author"></span>
-            <a href="" class="rounded-md text-white bg-darkBlue px-6 m-2 py-3">Get Started</a>
-            <img src="./assets/lady.svg" class="m-2 mt-6 lady lg:hidden" alt="">
+            <span id="author z-3"></span>
+            <a href="" class="rounded-md text-white bg-darkBlue px-6 m-2 py-3 z-3">Get Started</a>
+            <img src="./assets/lady.svg" class="absolute lady opacity-10 h-full -z-1 lg:hidden" alt="">
         </section>
         <div class="background-orange rounded-full bg-brightOrange absolute"></div>
         <img src="./assets/boy.svg" class="hidden lg:block absolute boy" alt="">
         <img src="./assets/students.svg" class="hidden lg:block absolute students" alt="">
         <img src="./assets/boy2.svg" class="hidden lg:block absolute boy2" alt="">
-        <img src="./assets/world.svg" class="hidden lg:block absolute world" alt="">
+        <img src="./assets/world.svg" class="hidden xl:block absolute world" alt="">
         <img src="./assets/star2.svg" class="hidden lg:block absolute star2" alt="">
         <img src="./assets/star1.svg" class="hidden lg:block absolute star1" alt="">
         <img src="./assets/circle.svg" class="hidden lg:block absolute circle" alt="">
@@ -55,11 +57,11 @@
         <!-- <img src="./assets/shape.svg" class="absolute shape" alt=""> -->
     </div>
     <!-- About us Page -->
-    <section class="container mx-auto flex flex-col md:flex-row items-center justify-center mt-9 m-6">
-        <div class="about-img w-1/2">
+    <section class="container flex flex-col  min-h-fit  md:flex-row items-center justify-center mt-9 h-auto my-5">
+        <div class="about-img w-3/4 md:w-1/2">
             <img src="./assets/about.svg" alt="">
         </div>
-        <div class="text w-1/2 break-normal">
+        <div class="text w-3/4 md:w-1/2 break-normal antialiased">
             <p>Lorem ipsum dolor sit amet.
                 Illum qui sit enim excepturi!
                 Tempore consequuntur molestias iure aliquid.
@@ -75,6 +77,103 @@
                 Assumenda praesentium tenetur optio perferendis.
                 Natus omnis dolores laborum quod.</p>
         </div>
+    </section>
+    <!-- Services -->
+    <section class="container bg-lightGrey flex flex-col items-center justify-center  min-h-fit min-w-fit md:h-screen">
+        <div
+            class="flex flex-col-reverse items-center justify-center md:flex-row items-center space-x-0 md:space-x-40 justify-center h-1/2">
+            <div class="text w-3/4 md:w-1/4 break-normal  space-y-8 ">
+                <p class="text-darkBlue  underline decoration-wavy underline-offset-4 text-center md:text-start">
+                    Language</p>
+                <p class="text antialiased">Lorem ipsum dolor sit amet.
+                    Illum qui sit enim excepturi!
+                    Tempore consequuntur molestias iure aliquid.
+                    Odio deleniti impedit animi harum!
+                    Odit suscipit cupiditate aspernatur optio.
+                    Assumenda praesentium tenetur optio perferendis.
+                    Natus omnis dolores laborum quod.</p>
+            </div>
+            <div class="learner ">
+                <img src="./assets/learner.svg" alt="">
+            </div>
+        </div>
+        <div
+            class="flex flex-col items-center justify-center md:flex-row items-center  space-x-0 md:space-x-40 justify-center h-1/2 ">
+            <div class="learner">
+                <img src="./assets/cert.svg" alt="">
+            </div>
+            <div class="text w-3/4 md:w-1/4 space-y-8 mb-4">
+                <p class="text-darkBlue underline decoration-wavy underline-offset-4 text-center md:text-start">
+                    Certification</p>
+                <p class="break-normal text-justify antialiased ">Lorem ipsum dolor sit amet.
+                    Illum qui sit enim excepturi!
+                    Tempore consequuntur molestias iure aliquid.
+                    Odio deleniti impedit animi harum!
+                    Odit suscipit cupiditate aspernatur optio.
+                    Assumenda praesentium tenetur optio perferendis.
+                    Natus omnis dolores laborum quod.</p>
+            </div>
+
+        </div>
+    </section>
+    <!-- Form  -->
+    <section class=" mt-12 container mx-auto">
+        <blockquote class="text-2xl font-semibold italic text-center text-slate-900">
+            Are you intrested in
+            <span
+                class="before:block before:absolute before:-inset-1 before:-skew-y-3 before:bg-brightOrange relative inline-block">
+                <span class="relative text-white">learning </span>
+            </span>
+            more ? <br> Reach us below ...
+        </blockquote>
+        <div class="flex flex flex-col md:flex-row max-hgrey-3 items-center jusify-center">
+            <div class="image w-3/4 md:w-1/2">
+                <img src="./assets/rafiki.svg" alt="">
+            </div>
+            <div class=" w-3/4 md:w-1/2 ">
+                <form class="space-y-4">
+                    <div class="container flex flex-col md:flex-row md:space-x-5">
+                        <label class="block py-2 ">
+                            <span class="font-light text-darkBlue">Enter Your Name</span>
+                            <input type="text" name="name" placeholder="Enter your name" id="name"
+                                class="placeholder:italic placeholder:text-grey  border-0 border-b-2 border-dark focus:border-brightOrange block mt-1 focus:ring-0 rounded">
+                        </label>
+                        <label class="block py-2 ">
+                            <span class="font-light text-darkBlue">Enter Your Phone Number</span>
+                            <input type="tel" name="number" placeholder="Enter your number" id="number"
+                                class="placeholder:italic placeholder:text-grey  border-0 border-b-2 border-dark focus:border-brightOrange block mt-1 focus:ring-0 rounded">
+                        </label>
+                    </div>
+                    <div class="container flex flex-col md:flex-row md:space-x-5">
+                        <label class="block py-2 ">
+                            <span class="font-light text-darkBlue">Enter Your Email</span>
+                            <input type="email" name="number" placeholder="someone@mail.com" id="number"
+                                class="placeholder:italic placeholder:text-grey  border-0 border-b-2 border-dark focus:border-brightOrange block mt-1 focus:ring-0 rounded">
+                        </label>
+                        <label class="block py-2 ">
+                            <span class="font-light text-darkBlue">Language</span>
+                            <select name="number" id="number"
+                                class="placeholder:italic placeholder:text-grey  border-0 border-b-2 border-dark focus:border-brightOrange block mt-1 focus:ring-0 rounded">
+                                <option>1</option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+                                <option>5</option>
+                            </select>
+                        </label>
+                    </div>
+
+                    <label class="block  py-2 w-full">
+                        <span class="font-light text-darkBlue">Enter Your Query Below</span>
+                        <textarea name="comment" id="comment" rows="3"
+                            placeholder="Give us some more details to improve your experience"
+                            class="placeholder:italic placeholder:text-grey mt-1  block border-black px-0.5 border-0 border-b-2 focus:border-brightOrange focus:ring-0 rounded w-3/4"></textarea>
+                    </label>
+                    
+                </form>
+            </div>
+        </div>
+
     </section>
 </body>
 
