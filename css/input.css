@@ -56,3 +56,20 @@
 .title{
     font-family: 'Aboreto'
 }
+
+.star2 {
+    left: 12vw;
+    bottom: 20vh;
+}
+.star1 {
+    right: 27vw;
+    top: 22vh;
+}
+.world {
+    left: 34vw;
+    top: 35vh;
+}
+.circle{
+    right: 0vw;
+    bottom: 3vh;
+}

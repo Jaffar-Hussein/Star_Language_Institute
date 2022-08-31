@@ -636,14 +636,6 @@ video {
   width: 50%;
 }
 
-.w-3\/4 {
-  width: 75%;
-}
-
-.w-1\/4 {
-  width: 25%;
-}
-
 .flex-col {
   flex-direction: column;
 }
@@ -747,11 +739,6 @@ video {
   line-height: 2rem;
 }
 
-.text-3xl {
-  font-size: 1.875rem;
-  line-height: 2.25rem;
-}
-
 .font-bold {
   font-weight: 700;
 }
@@ -843,6 +830,26 @@ video {
   font-family: 'Aboreto'
 }
 
+.star2 {
+  left: 12vw;
+  bottom: 20vh;
+}
+
+.star1 {
+  right: 27vw;
+  top: 22vh;
+}
+
+.world {
+  left: 34vw;
+  top: 35vh;
+}
+
+.circle{
+  right: 0vw;
+  bottom: 3vh;
+}
+
 @media (min-width: 768px) {
   .md\:flex {
     display: flex;
@@ -850,6 +857,11 @@ video {
 
   .md\:flex-row {
     flex-direction: row;
+  }
+
+  .md\:text-3xl {
+    font-size: 1.875rem;
+    line-height: 2.25rem;
   }
 }
 
