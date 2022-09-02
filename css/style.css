@@ -801,6 +801,14 @@ select {
   margin-top: 0.25rem;
 }
 
+.mb-3 {
+  margin-bottom: 0.75rem;
+}
+
+.mt-2 {
+  margin-top: 0.5rem;
+}
+
 .block {
   display: block;
 }
@@ -1096,6 +1104,11 @@ select {
 .text-base {
   font-size: 1rem;
   line-height: 1.5rem;
+}
+
+.text-sm {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
 }
 
 .font-bold {

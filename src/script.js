@@ -1,4 +1,7 @@
 const cloudinary = "https://res.cloudinary.com/hanancodes/"
+const quote = document.getElementById("quote")
+const author = document.getElementById("author")
+const quotes_url = "https://type.fit/api/quotes"
 const assets = "https://starinstitute.herokuapp.com/assets"
 const hero_desktop = document.getElementById("hero_desktop")
 const hero_mobile = document.getElementById("hero_mobile")
@@ -13,7 +16,17 @@ const logo = document.getElementById("logo");
 // Consuming the quotes API
 
 // Consuming custom API 
-
+setTimeout(() => {
+    const random = 2;
+    fetch(quotes_url)
+        .then((response) => response.json())
+        .then(data => {
+            quote.textContent =  data[0].text
+            author.textContent = data[0].author
+            // console.log(data[0]);
+            // const quote = data[0][random]
+        })
+}, 3000)
 // Consuming images
 imageAPIConsumption(logo, "logo");
 imageAPIConsumption(hero_desktop, "hero_desktop");
@@ -33,3 +46,7 @@ function imageAPIConsumption(node, name) {
             node.src = cloudinary + data[0][name]
         })
 }
+
+// 
+
+const form = document.getElementById("address-form");
