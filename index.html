@@ -12,12 +12,12 @@
 
 <body>
     <!-- First screen -->
-    <div class="relative min-h-fit p-1 first mb-5">
+    <div class="relative h-screen p-1 first mb-5">
         <!-- Nav -->
         <nav class="  mx-auto px-6 py-1 mb-5">
             <div class=" mx-auto flex items-center justify-between">
                 <div class="p-2 flex items-center">
-                    <img src="./assets/logo.svg" alt="">
+                    <img src="./assets/logo.svg" id="logo" alt="">
                     <!-- <p class="tracking-tighter font-serif">Star Language Institute</p> -->
                 </div>
                 <div class="hidden md:flex space-x-12 pr-8">
@@ -43,23 +43,23 @@
                 Voluptatem rem perspiciatis et libero animi necessitatibus? Omnis!</p>
             <span id="author z-3"></span>
             <a href="" class="rounded-md text-white bg-darkBlue px-6 m-2 py-3 z-3">Get Started</a>
-            <img src="./assets/lady.svg" class="absolute lady opacity-10 h-full -z-1 lg:hidden" alt="">
+            <img src="" id="hero_desktop" class="absolute lady opacity-10 h-full -z-1 lg:hidden" alt="">
         </section>
         <div class="background-orange rounded-full bg-brightOrange absolute"></div>
-        <img src="./assets/boy.svg" class="hidden lg:block absolute boy" alt="">
-        <img src="./assets/students.svg" class="hidden lg:block absolute students" alt="">
-        <img src="./assets/boy2.svg" class="hidden lg:block absolute boy2" alt="">
-        <img src="./assets/world.svg" class="hidden xl:block absolute world blur-sm" alt="">
-        <img src="./assets/star2.svg" class="hidden lg:block absolute star2 blur-sm" alt="">
-        <img src="./assets/star1.svg" class="hidden lg:block absolute star1 blur-sm " alt="">
-        <img src="./assets/circle.svg" class="hidden lg:block absolute circle blur-sm" alt="">
+        <img src="" id="hero_mobile" class=" opacity-25 absolute hidden lg:block absolute boy" alt="">
+        <img src="" id="about_mobile" class="hidden lg:block absolute students" alt="">
+        <img src="" id="hero_svg5" class="hidden lg:block absolute boy2" alt="">
+        <img src="" id="hero_svg4" class="hidden xl:block absolute world blur-sm" alt="">
+        <img src="" id="hero_svg2" class="hidden lg:block absolute star2 blur-sm" alt="">
+        <img src="" id="hero_svg1" class="hidden lg:block absolute star1 blur-sm " alt="">
+        <img src="" id="hero_svg3" class="hidden lg:block absolute circle blur-sm" alt="">
 
         <!-- <img src="./assets/shape.svg" class="absolute shape" alt=""> -->
     </div>
     <!-- About us Page -->
     <section class="container flex flex-col  min-h-fit  md:flex-row items-center justify-center mt-9 h-auto my-5">
         <div class="about-img w-3/4 md:w-1/2">
-            <img src="./assets/about.svg" alt="">
+            <img src="" id="about_desktop" alt="">
         </div>
         <div class="text w-3/4 md:w-1/2 break-normal antialiased">
             <p>Lorem ipsum dolor sit amet.
@@ -80,8 +80,12 @@
     </section>
     <!-- Services -->
     <section class="container bg-lightGrey flex flex-col items-center justify-center  min-h-fit min-w-fit md:h-screen">
+        <p class="text-center antialiased text-xl underline decoration-wavy underline-offset-8  tracking-wide my-3 text-darkBlue" id="programs">
+            Our Services
+        </p>
         <div
             class="flex flex-col-reverse items-center justify-center md:flex-row items-center space-x-0 md:space-x-40 justify-center h-1/2">
+            
             <div class="text w-3/4 md:w-1/4 break-normal  space-y-8 ">
                 <p class="text-darkBlue  underline decoration-wavy underline-offset-4 text-center md:text-start">
                     Language</p>
@@ -119,12 +123,12 @@
     </section>
     <!-- Languages -->
     <section class="container min-h-screen space-y-3 flex flex-col justify-center items-center w-screen">
-        <p class="text-center antialiased text-xl underline decoration-wavy underline-offset-8  tracking-wide my-3 text-darkBlue" id="programs">
+        <p class="text-center antialiased text-xl underline decoration-wavy underline-offset-8  tracking-wide my-3 text-darkBlue" >
             Our Programs
         </p>
         <div class="flex flex-col-reverse md:flex-row items-center justify-around min-w-fill">
             <div class="flex-col items-center justify-center  w-3/4 space-y-2 md:w-1/3">
-                <p class="antialiased text- text-darkBlue text-lg">Arabic</p>
+                <p class="antialiased text- text-darkBlue text-lg" >Arabic</p>
                 <div class="text-left antialiased text-base">
                     <p>Lorem ipsum dolor sit amet consectetur.
                     Temporibus ut nobis praesentium dignissimos hic?
@@ -141,7 +145,7 @@
         </div>
         <div class="flex flex-col md:flex-row items-center justify-around min-w-fill">
             <div class=" -translate-x-6  w-3/4 md:w-1/3 h-3/4">
-                <img src="./assets/english.jpg" class="object-cover rounded-lg" width="500" alt="">
+                <img src="./assets/english.jpg"  class="object-cover rounded-lg" width="500" alt="">
             </div>
             <div class="flex-col items-center justify-center  w-3/4 space-y-2 md:w-1/3">
                 <p class="antialiased text- text-darkBlue text-lg">English</p>
@@ -150,7 +154,7 @@
                     Temporibus ut nobis praesentium dignissimos hic?
                     Quae similique numquam nesciunt neque commodi!</p>
                 </div>
-                <div class="flex items-center justify-between">
+                <div id="programs" class="flex items-center justify-between">
                     <p class="antialiased text-darkBlue">Kshs <span>2500</span> per session</p>
                     <p class="antialiased text-darkBlue">Duration: <span>6</span> months</p>
                 </div>
@@ -159,7 +163,7 @@
         </div>
         <div class="flex flex-col-reverse md:flex-row items-center  justify-around min-w-fill">
             <div class="flex-col items-center justify-center space-y-2 w-3/4 md:w-1/3">
-                <p class="antialiased text- text-darkBlue text-lg">Kiswahili</p>
+                <p class="antialiased text- text-darkBlue text-lg" id="kiswahili">Kiswahili</p>
                 <div class="text-left antialiased text-base">
                     <p>Lorem ipsum dolor sit amet consectetur.
                     Temporibus ut nobis praesentium dignissimos hic?
