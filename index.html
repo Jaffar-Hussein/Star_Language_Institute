@@ -63,14 +63,14 @@
             <img src="" id="about_desktop" alt="">
         </div>
         <div class="text w-3/4 md:w-1/2 break-normal antialiased">
-            <p>Lorem ipsum dolor sit amet.
+            <p id="about_founder">Lorem ipsum dolor sit amet.
                 Illum qui sit enim excepturi!
                 Tempore consequuntur molestias iure aliquid.
                 Odio deleniti impedit animi harum!
                 Odit suscipit cupiditate aspernatur optio.
                 Assumenda praesentium tenetur optio perferendis.
                 Natus omnis dolores laborum quod.</p>
-            <p>Lorem ipsum dolor sit amet.
+            <p id="about_institute">Lorem ipsum dolor sit amet.
                 Illum qui sit enim excepturi!
                 Tempore consequuntur molestias iure aliquid.
                 Odio deleniti impedit animi harum!
@@ -130,56 +130,56 @@
             class="text-center antialiased text-xl underline decoration-wavy underline-offset-8  tracking-wide my-3 text-darkBlue">
             Our Programs
         </p>
-        <div class="flex flex-col-reverse md:flex-row items-center justify-around min-w-fill">
-            <div class="flex-col items-center justify-center  w-3/4 space-y-2 md:w-1/3">
-                <p class="antialiased text- text-darkBlue text-lg">Arabic</p>
-                <div class="text-left antialiased text-base">
-                    <p>Lorem ipsum dolor sit amet consectetur.
+        <div class="flex flex-col-reverse md:flex-row items-center justify-around min-w-fill" id="1">
+            <div class="flex-col items-center justify-center  w-3/4 space-y-2 md:w-1/3" >
+                <p class="antialiased text- text-darkBlue text-lg name" id="1_name">Arabic</p>
+                <div class="text-left antialiased text-base" >
+                    <p id="1_description">Lorem ipsum dolor sit amet consectetur.
                         Temporibus ut nobis praesentium dignissimos hic?
                         Quae similique numquam nesciunt neque commodi!</p>
                 </div>
                 <div class="flex items-center justify-between">
-                    <p class="antialiased text-darkBlue">Kshs <span>2500</span> per session</p>
-                    <p class="antialiased text-darkBlue">Duration: <span>6</span> months</p>
+                    <p class="antialiased text-darkBlue"> $ <span id="1_price">2500</span> per session</p>
+                    <p class="antialiased text-darkBlue">Duration: <span id="1_duration">6</span> months</p>
                 </div>
             </div>
             <div class=" -translate-x-6  w-3/4 md:w-1/3 h-3/4">
-                <img src="./assets/arabic.jpg" width="500" class="object-cover rounded-lg" alt="">
+                <img src="./assets/arabic.jpg" id="1_image" width="500" class="object-cover rounded-lg" alt="">
             </div>
         </div>
         <div class="flex flex-col md:flex-row items-center justify-around min-w-fill">
             <div class=" -translate-x-6  w-3/4 md:w-1/3 h-3/4">
-                <img src="./assets/english.jpg" class="object-cover rounded-lg" width="500" alt="">
+                <img src="./assets/english.jpg" id="2_image" class="object-cover rounded-lg" width="500" alt="">
             </div>
             <div class="flex-col items-center justify-center  w-3/4 space-y-2 md:w-1/3">
                 <p class="antialiased text- text-darkBlue text-lg">English</p>
                 <div class="text-left antialiased text-base">
-                    <p>Lorem ipsum dolor sit amet consectetur.
+                    <p id="2_description">Lorem ipsum dolor sit amet consectetur.
                         Temporibus ut nobis praesentium dignissimos hic?
                         Quae similique numquam nesciunt neque commodi!</p>
                 </div>
-                <div id="programs" class="flex items-center justify-between">
-                    <p class="antialiased text-darkBlue">Kshs <span>2500</span> per session</p>
-                    <p class="antialiased text-darkBlue">Duration: <span>6</span> months</p>
+                <div class="flex items-center justify-between">
+                    <p class="antialiased text-darkBlue"> $ <span id="2_price">2500</span> per session</p>
+                    <p class="antialiased text-darkBlue">Duration: <span id="2_duration">6</span> months</p>
                 </div>
             </div>
 
         </div>
         <div class="flex flex-col-reverse md:flex-row items-center  justify-around min-w-fill">
             <div class="flex-col items-center justify-center space-y-2 w-3/4 md:w-1/3">
-                <p class="antialiased text- text-darkBlue text-lg" id="kiswahili">Kiswahili</p>
-                <div class="text-left antialiased text-base">
-                    <p>Lorem ipsum dolor sit amet consectetur.
+                <p class="antialiased text- text-darkBlue text-lg" id="3_name">Kiswahili</p>
+                <div class="text-left antialiased text-base" >
+                    <p id="3_description" >Lorem ipsum dolor sit amet consectetur.
                         Temporibus ut nobis praesentium dignissimos hic?
                         Quae similique numquam nesciunt neque commodi!</p>
                 </div>
                 <div class="flex items-center justify-between">
-                    <p class="antialiased text-darkBlue">Kshs <span>2500</span> per session</p>
-                    <p class="antialiased text-darkBlue">Duration: <span>6</span> months</p>
+                    <p class="antialiased text-darkBlue"> $ <span id="3_price">2500</span> per session</p>
+                    <p class="antialiased text-darkBlue">Duration: <span id="3_duration">6</span> months</p>
                 </div>
             </div>
             <div class=" -translate-x-6  w-3/4 md:w-1/3 h-3/4">
-                <img src="./assets/swahili.webp" class="object-cover rounded-lg shadow-xl" width="500" alt="">
+                <img src="./assets/swahili.webp" id="3_image" class="object-cover rounded-lg shadow-xl" width="500" alt="">
             </div>
         </div>
     </section>
@@ -221,8 +221,8 @@
                             <span class="font-light text-darkBlue">Language</span>
                             <select name="number" id="number"
                                 class="placeholder:italic placeholder:text-grey  border-0 border-b-2 border-dark focus:border-brightOrange block mt-1 focus:ring-0 rounded">
-                                <option>1</option>
-                                <option>2</option>
+                                <option>General</option>
+                                <option></option>
                                 <option>3</option>
                                 <option>4</option>
                                 <option>5</option>
@@ -236,14 +236,16 @@
                             placeholder="Give us some more details to improve your experience"
                             class="placeholder:italic placeholder:text-grey mt-1 caret-brightOrange block border-black px-0.5 border-0 border-b-2 focus:border-brightOrange focus:ring-0 rounded w-3/4"></textarea>
                     </label>
-                    <a href="" type=submit class="rounded hover:rounded-lg bg-brightOrange px-6 p-2 text-white font-light">Get
+                    <a href="" type=submit
+                        class="rounded hover:rounded-lg bg-brightOrange px-6 p-2 text-white font-light">Get
                         Started</a>
                 </form>
             </div>
         </div>
     </section>
     <!-- Footer -->
-    <footer class="bg-footerDark flex flex-col justify-between align-items text-white min-h-fit p-3 md:p-12 space-y-10 font-light text-xs">
+    <footer
+        class="bg-footerDark flex flex-col justify-between align-items text-white min-h-fit p-3 md:p-12 space-y-10 font-light text-xs">
         <div class="flex flex-col space-y-6 space-x-3 align-items w-full  md:flex-row flex-between">
             <div class="hidden md:block w-1/3 space-y-2">
                 <p class="text-base">Ready to get started ?</p>
@@ -253,10 +255,10 @@
             <div class="grid grid-flow-row auto-rows-fr md:grid-flow-col md:auto-cols-max gap-x-40 w-full md:w-3/4 ">
                 <div class="space-y-1">
                     <p class="text-brightOrange mb-3">Contact info</p>
-                    <p>Director : Najma Hussein</p>
-                    <p>Primary : 0712345678</p>
-                    <p>Secondary: 0712345678</p>
-                    <p>Email:abduba13@gmail.com</p>
+                    <p>Director : <span id="founder_name"></span></p>
+                    <p>Primary : <span id="primary_phoneNumber"></span></p>
+                    <p>Secondary: <span id="secondary_phoneNumber"></span></p>
+                    <p>Email:<span id="contact_email"></span></p>
                 </div>
                 <div class="space-y-1">
                     <p class="text-brightOrange mb-3">About</p>
@@ -270,7 +272,7 @@
                     <p>Faqs</p>
                     <p>Contact us</p>
                 </div>
-                
+
             </div>
         </div>
         <div class="flex justify-between align-items space-x-5">
@@ -302,4 +304,5 @@
         </div>
     </footer>
 </body>
+
 </html>
