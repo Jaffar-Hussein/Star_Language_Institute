@@ -15,7 +15,7 @@ module.exports = {
     extend: {
       backgroundImage: {
         'lady': "url('./assets/lady.svg')",
-        
+
       },
       colors: {
         brightOrange: 'rgba(255, 103, 0, 1)',
@@ -23,7 +23,8 @@ module.exports = {
         darkGrey: 'rgba(192, 192, 192, 1)',
         paleBlue: 'rgba(58, 110, 165, 1)',
         darkBlue: 'rgba(0, 78, 152, 1)',
-        lightGrey: 'rgba(240, 240, 240, 1)'
+        lightGrey: 'rgba(240, 240, 240, 1)',
+        footerDark: 'rgba(30, 40, 51, 1)'
       }
     },
   },
