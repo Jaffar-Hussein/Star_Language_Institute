@@ -51,7 +51,7 @@ setTimeout(() => {
             // console.log(data[0]);
             // const quote = data[0][random]
         })
-}, 3000)
+}, 2000)
 
 // Consuming images
 imageAPIConsumption(logo, "logo");
