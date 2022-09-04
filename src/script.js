@@ -41,12 +41,12 @@ const image_3 = document.getElementById("3_image")
 
 // Consuming custom API 
 setTimeout(() => {
-    const random = 2;
+    const random =  Math.floor(Math.random()*100);
     fetch(quotes_url)
         .then((response) => response.json())
         .then(data => {
-            quote.textContent = data[0].text
-            author.textContent = data[0].author
+            quote.textContent = data[random].text
+            author.textContent = data[random].author
             // console.log(data[0]);
             // const quote = data[0][random]
         })
