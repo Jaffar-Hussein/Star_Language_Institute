@@ -1348,6 +1348,10 @@ select {
   color: rgba(255, 103, 0, 1);
 }
 
+.text-darkGrey {
+  color: rgba(192, 192, 192, 1);
+}
+
 .underline {
   -webkit-text-decoration-line: underline;
           text-decoration-line: underline;
@@ -1523,8 +1527,24 @@ select {
   fill: #3b82f6;
 }
 
+.hover\:fill-brightOrange:hover {
+  fill: rgba(255, 103, 0, 1);
+}
+
 .hover\:stroke-2:hover {
   stroke-width: 2;
+}
+
+.hover\:text-darkGrey:hover {
+  color: rgba(192, 192, 192, 1);
+}
+
+.hover\:text-darkBlue:hover {
+  color: rgba(0, 78, 152, 1);
+}
+
+.hover\:text-brightOrange:hover {
+  color: rgba(255, 103, 0, 1);
 }
 
 .hover\:underline:hover {

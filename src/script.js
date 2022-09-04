@@ -37,11 +37,12 @@ const price_3 = document.getElementById("3_price")
 const image_1 = document.getElementById("1_image")
 const image_2 = document.getElementById("2_image")
 const image_3 = document.getElementById("3_image")
+const form = document.getElementById("address-form");
 // Consuming the quotes API
 
 // Consuming custom API 
 setTimeout(() => {
-    const random =  Math.floor(Math.random()*100);
+    const random = Math.floor(Math.random() * 100);
     fetch(quotes_url)
         .then((response) => response.json())
         .then(data => {
@@ -51,6 +52,7 @@ setTimeout(() => {
             // const quote = data[0][random]
         })
 }, 3000)
+
 // Consuming images
 imageAPIConsumption(logo, "logo");
 imageAPIConsumption(hero_desktop, "hero_desktop");
@@ -64,9 +66,9 @@ imageAPIConsumption(hero_svg5, "hero_svg5")
 imageAPIConsumption(about_desktop, "about_desktop")
 
 
-// 
+// Sending the form to the server
 
-const form = document.getElementById("address-form");
+
 
 // Consuming text content
 aboutAPIconsumption(about_institute, "institute_description");
@@ -79,9 +81,9 @@ aboutAPIconsumption(tag_line, "tag_line");
 
 // Consuming courses data
 
-coursesAPIconsumption(name_1,description_1,price_1,duration_1,image_1,0)
-coursesAPIconsumption(name_2,description_2,price_2,duration_2,image_2,1)
-coursesAPIconsumption(name_3,description_3,price_3,duration_3,image_3,2)
+coursesAPIconsumption(name_1, description_1, price_1, duration_1, image_1, 0)
+coursesAPIconsumption(name_2, description_2, price_2, duration_2, image_2, 1)
+coursesAPIconsumption(name_3, description_3, price_3, duration_3, image_3, 2)
 
 function aboutAPIconsumption(node, name) {
     fetch(about)
@@ -96,7 +98,7 @@ function coursesAPIconsumption(node_name, node_description, node_price, node_dur
         .then(resp => resp.json())
         .then(data => {
             // node_name.textContent = data[id]
-            console.log(data[id]);
+            // console.log(data[id]);
             node_description.textContent = data[id]["description"]
             node_name.textContent = data[id]["name"]
             node_price.textContent = data[id]["price"]
