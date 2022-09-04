@@ -758,6 +758,10 @@ select {
   position: relative;
 }
 
+.z-10 {
+  z-index: 10;
+}
+
 .m-2 {
   margin: 0.5rem;
 }
@@ -775,6 +779,11 @@ select {
 .my-3 {
   margin-top: 0.75rem;
   margin-bottom: 0.75rem;
+}
+
+.my-auto {
+  margin-top: auto;
+  margin-bottom: auto;
 }
 
 .mb-5 {
