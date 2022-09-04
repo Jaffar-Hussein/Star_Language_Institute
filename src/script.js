@@ -4,7 +4,7 @@ const author = document.getElementById("author")
 const quotes_url = "https://type.fit/api/quotes"
 const assets = "https://starinstitute.herokuapp.com/assets"
 const about = "https://starinstitute.herokuapp.com/about"
-const courses = "https://starinstitute.herokuapp.com/all_courses"
+const courses = "https://starinstitute.herokuapp.com/all_courses/"
 const hero_desktop = document.getElementById("hero_desktop")
 const hero_mobile = document.getElementById("hero_mobile")
 const hero_svg1 = document.getElementById("hero_svg1")
@@ -79,7 +79,9 @@ aboutAPIconsumption(tag_line, "tag_line");
 
 // Consuming courses data
 
-coursesAPIconsumption(name_1,description_1,price_1,duration_1,image_1,1)
+coursesAPIconsumption(name_1,description_1,price_1,duration_1,image_1,0)
+coursesAPIconsumption(name_2,description_2,price_2,duration_2,image_2,1)
+coursesAPIconsumption(name_3,description_3,price_3,duration_3,image_3,2)
 
 function aboutAPIconsumption(node, name) {
     fetch(about)
@@ -94,6 +96,7 @@ function coursesAPIconsumption(node_name, node_description, node_price, node_dur
         .then(resp => resp.json())
         .then(data => {
             // node_name.textContent = data[id]
+            console.log(data[id]);
             node_description.textContent = data[id]["description"]
             node_name.textContent = data[id]["name"]
             node_price.textContent = data[id]["price"]

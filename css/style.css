@@ -1128,6 +1128,10 @@ select {
   background-color: rgba(30, 40, 51, 1);
 }
 
+.fill-blue-500 {
+  fill: #3b82f6;
+}
+
 .stroke-1 {
   stroke-width: 1;
 }
@@ -1500,6 +1504,10 @@ select {
 
 .hover\:rounded-lg:hover {
   border-radius: 0.5rem;
+}
+
+.hover\:fill-blue-500:hover {
+  fill: #3b82f6;
 }
 
 .hover\:stroke-2:hover {
