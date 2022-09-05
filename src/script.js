@@ -73,7 +73,7 @@ addressForm.addEventListener('submit', (event) => {
     event.preventDefault();
     const name = event.target.name.value;
     const language = event.target.language.value;
-    const number = event.target.number.value;
+    const phone_number = event.target.number.value;
     const email = event.target.email.value;
     const comment = event.target.comment.value;
     fetch(feedback, {
@@ -83,15 +83,19 @@ addressForm.addEventListener('submit', (event) => {
             },
             body: JSON.stringify({
                 name: name,
-                phoneNumber: number,
+                phoneNumber: phone_number,
                 email: email,
                 message: comment,
                 language: parseInt(language, 10),
             })
 
-        }).then(response => response.json())
-        .then(data =>
-            console.log(data))
+        })
+        .then(response => response.json())
+        .then(data => {
+            if (data) {
+                alert(`Hi ${data.name} we shall reach out to you ASAP!`);
+            }
+        })
     addressForm.reset();
 })
 
