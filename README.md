@@ -8,7 +8,7 @@
 
 Star Language institute Website is a landing page for a language institute that showcases its services ang gives a means of communication between the client and owner.The sites fetches information for motivational quotes from an external API and private information from an in-house REST API linked to a database.
  
-## Installation
+## SetUp Instructions
 
     # clone the repository
     $ git clone https://github.com/Jaffar-Hussein/Star_Language_Institute.git
