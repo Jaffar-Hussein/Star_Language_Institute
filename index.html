@@ -179,63 +179,63 @@
         </div>
     </section>
     <!-- Form  -->
-    <section class=" mt-12 h-full py-5 mx-auto w-screen bg-lightGrey">
-        <blockquote class="text-2xl font-semibold italic text-center text-slate-900" id="address">
-            Are you interested in
-            <span
-                class="before:block before:absolute before:-inset-1 before:-skew-y-3 before:bg-brightOrange relative inline-block">
-                <span class="relative text-white">learning </span>
-            </span>
-            more ? <br> Reach us below ...
-        </blockquote>
-        <div class="flex flex h-1/2 flex-col md:flex-row items-center jusify-center">
-            <div class="image w-1/2 md:w-1/2 h-1/2">
-                <img src="./assets/rafiki.svg" width="600" class="h-3/4" alt="">
-            </div>
-            <div class=" w-3/4 md:w-1/2 ">
-                <form class="space-y-4" id="address-form">
-                    <div class="container flex flex-col md:flex-row md:space-x-5">
-                        <label class="block py-2 ">
-                            <span class="font-light text-darkBlue">Enter Your Name</span>
-                            <input type="text" name="name" placeholder="Enter your name" id="name"
-                                class="placeholder:italic placeholder:text-grey caret-brightOrange border-0 border-b-2 border-dark focus:border-brightOrange block mt-1 focus:ring-0 rounded">
-                        </label>
-                        <label class="block py-2 ">
-                            <span class="font-light text-darkBlue">Enter Your Phone Number</span>
-                            <input type="tel" name="number" placeholder="Enter your number" id="number"
-                                class="placeholder:italic caret-brightOrange placeholder:text-grey  border-0 border-b-2 border-dark focus:border-brightOrange block mt-1 focus:ring-0 rounded">
-                        </label>
-                    </div>
-                    <div class="container flex flex-col md:flex-row md:space-x-5">
-                        <label class="block py-2 ">
-                            <span class="font-light text-darkBlue">Enter Your Email</span>
-                            <input type="email" name="number" placeholder="someone@mail.com" id="number"
-                                class="placeholder:italic caret-brightOrange placeholder:text-grey  border-0 border-b-2 border-dark focus:border-brightOrange block mt-1 focus:ring-0 rounded">
-                        </label>
-                        <label class="block py-2 ">
-                            <span class="font-light text-darkBlue">Language</span>
-                            <select name="number" id="number"
-                                class="placeholder:italic placeholder:text-grey  border-0 border-b-2 border-dark focus:border-brightOrange block mt-1 focus:ring-0 rounded">
-                                <option>General</option>
-                                <option>Arabic</option>
-                                <option>English</option>
-                                <option>Kiswahili</option>
-                            </select>
-                        </label>
-                    </div>
 
-                    <label class="block  py-2 w-full">
-                        <span class="font-light text-darkBlue">Enter Your Query Below</span>
-                        <textarea name="comment" id="comment" rows="3"
-                            placeholder="Give us some more details to improve your experience"
-                            class="placeholder:italic placeholder:text-grey mt-1 caret-brightOrange block border-black px-0.5 border-0 border-b-2 focus:border-brightOrange focus:ring-0 rounded w-3/4"></textarea>
-                    </label>
-                    <a href="" type=submit
-                        class="rounded hover:rounded-lg bg-brightOrange px-6 p-2 text-white font-light">Get
-                        Started</a>
-                </form>
-            </div>
+    <blockquote class="text-2xl font-semibold italic text-center text-slate-900" id="address">
+        Are you interested in
+        <span
+            class="before:block before:absolute before:-inset-1 before:-skew-y-3 before:bg-brightOrange relative inline-block">
+            <span class="relative text-white">learning </span>
+        </span>
+        more ? <br> Reach us below ...
+    </blockquote>
+    <div class="flex flex h-1/2 flex-col md:flex-row items-center jusify-center">
+        <div class="image w-1/2 md:w-1/2 h-1/2">
+            <img src="./assets/rafiki.svg" width="600" class="h-3/4" alt="">
         </div>
+        <div class=" w-3/4 md:w-1/2 ">
+            <form class="space-y-4" id="address-form">
+                <div class="container flex flex-col md:flex-row md:space-x-5">
+                    <label class="block py-2 ">
+                        <span class="font-light text-darkBlue">Enter Your Name</span>
+                        <input type="text" name="name" placeholder="Enter your name" id="name"
+                            class="placeholder:italic placeholder:text-grey caret-brightOrange border-0 border-b-2 border-dark focus:border-brightOrange block mt-1 focus:ring-0 rounded">
+                    </label>
+                    <label class="block py-2 ">
+                        <span class="font-light text-darkBlue">Enter Your Phone Number</span>
+                        <input type="tel" name="number" placeholder="Enter your number" id="phone_number"
+                            class="placeholder:italic caret-brightOrange placeholder:text-grey  border-0 border-b-2 border-dark focus:border-brightOrange block mt-1 focus:ring-0 rounded">
+                    </label>
+                </div>
+                <div class="container flex flex-col md:flex-row md:space-x-5">
+                    <label class="block py-2 ">
+                        <span class="font-light text-darkBlue">Enter Your Email</span>
+                        <input type="email" name="email" placeholder="someone@mail.com"
+                            class="placeholder:italic caret-brightOrange placeholder:text-grey  border-0 border-b-2 border-dark focus:border-brightOrange block mt-1 focus:ring-0 rounded">
+                    </label>
+                    <label class="block py-2 ">
+                        <span class="font-light text-darkBlue">Language</span>
+                        <select name="language"
+                            class="placeholder:italic placeholder:text-grey  border-0 border-b-2 border-dark focus:border-brightOrange block mt-1 focus:ring-0 rounded">
+                            <option>General</option>
+                            <option value="0">Arabic</option>
+                            <option value="1">English</option>
+                            <option value="2">Kiswahili</option>
+                        </select>
+                    </label>
+                </div>
+
+                <label class="block  py-2 w-full">
+                    <span class="font-light text-darkBlue">Enter Your Query Below</span>
+                    <textarea name="comment" id="comment" rows="3"
+                        placeholder="Give us some more details to improve your experience"
+                        class="placeholder:italic placeholder:text-grey mt-1 caret-brightOrange block border-black px-0.5 border-0 border-b-2 focus:border-brightOrange focus:ring-0 rounded w-3/4"></textarea>
+                </label>
+                <input type="submit" class="rounded  bg-brightOrange px-6 p-2 text-white font-light"
+                    value="Get Started">
+
+            </form>
+        </div>
+    </div>
     </section>
     <!-- Footer -->
     <footer
