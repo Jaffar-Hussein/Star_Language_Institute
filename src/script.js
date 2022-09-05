@@ -5,6 +5,7 @@ const quotes_url = "https://type.fit/api/quotes"
 const assets = "https://starinstitute.herokuapp.com/assets"
 const about = "https://starinstitute.herokuapp.com/about"
 const courses = "https://starinstitute.herokuapp.com/all_courses/"
+const feedback = "https://starinstitute.herokuapp.com/feedback/"
 const hero_desktop = document.getElementById("hero_desktop")
 const hero_mobile = document.getElementById("hero_mobile")
 const hero_svg1 = document.getElementById("hero_svg1")
@@ -37,7 +38,7 @@ const price_3 = document.getElementById("3_price")
 const image_1 = document.getElementById("1_image")
 const image_2 = document.getElementById("2_image")
 const image_3 = document.getElementById("3_image")
-const form = document.getElementById("address-form");
+const addressForm = document.getElementById("address-form");
 // Consuming the quotes API
 
 // Consuming custom API 
@@ -67,6 +68,32 @@ imageAPIConsumption(about_desktop, "about_desktop")
 
 
 // Sending the form to the server
+
+addressForm.addEventListener('submit', (event) => {
+    event.preventDefault();
+    const name = event.target.name.value;
+    const language = event.target.language.value;
+    const number = event.target.number.value;
+    const email = event.target.email.value;
+    const comment = event.target.comment.value;
+    fetch(feedback, {
+            method: 'POST',
+            headers: {
+                'content-type': 'application/json',
+            },
+            body: JSON.stringify({
+                name: name,
+                phoneNumber: number,
+                email: email,
+                message: comment,
+                language: language,
+            })
+
+        }).then(response => response.json())
+        .then(data =>
+            console.log(data))
+    addressForm.reset();
+})
 
 
 
