@@ -86,7 +86,7 @@ addressForm.addEventListener('submit', (event) => {
                 phoneNumber: number,
                 email: email,
                 message: comment,
-                language: language,
+                language: parseInt(language, 10),
             })
 
         }).then(response => response.json())
