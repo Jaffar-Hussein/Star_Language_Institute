@@ -7,7 +7,7 @@
 ## Description 
 
 Star Language institute Website is a landing page for a language institute that showcases its services ang gives a means of communication between the client and owner.The sites fetches information for motivational quotes from an external API and private information from an in-house REST API linked to a database.
- 
+### [Figma Designs](https://www.figma.com/file/SJCLWvBlnjqLSVR2S0BeuM/Star-Language-Institute?node-id=0%3A1)
 ## SetUp Instructions
 
     # clone the repository
